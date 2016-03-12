@@ -17,19 +17,7 @@ Usage:
 3) Migrate the project.
   > python manage.py migrate
 
-  Note: For test, we create a test database in mysql and create a table test. the test table shedule under blow:
-  =====================delimter start==========================
-      CREATE TABLE `test` (
-      `lid` char(100) NOT NULL,
-      `logname` char(100) NOT NULL,
-      `game` char(100) NOT NULL,
-      `thread` char(100) NOT NULL,
-      `loglevel` char(10) NOT NULL,
-      `logtime` char(100) NOT NULL,
-      `loginfo` longtext NOT NULL,
-      PRIMARY KEY (`lid`,`logtime`)
-      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 
-  ===================delimter end==============================
+  Note: For test, we create a test database in mysql and create a table test. the test table shedule under mysite folder.
 
 4) Create an django administrator.
   > python manage.py createsuperuser
@@ -40,6 +28,7 @@ Usage:
   > service redis-server start
 
 6) Change the client user and security key.
+
   The configuration file path is ./mysite/polls/sheduled/config.py
 
 7) Run the django application.
@@ -52,10 +41,13 @@ Usage:
 
   Note: celery worker can not run as root, so need to use normal user, here, for example, I used mysql.
 
-9) setting shedule
+9) Setting shedule
+
    login the django administrate web. 
    http://127.0.0.1:80/admin/
+
    (1) At the "DJCELERY" column, select "Periodic tasks"
+
    (2) Add PERIODIC TASK
    
 10) Check the result.
