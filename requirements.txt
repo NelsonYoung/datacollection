@@ -1,0 +1,5 @@
+MySQL-python.x86_64
+django
+django-celery
+redis
+rpyc
