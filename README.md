@@ -17,7 +17,7 @@ Usage:
 3) Migrate the project.
   > python manage.py migrate
 
-  Note: For test, we create a test database in mysql and create a table test. the test table shedule under mysite folder.
+  Note: For test, we create a test database in mysql and create a table test. The test table shedule under mysite folder.
 
 4) Create an django administrator.
   > python manage.py createsuperuser
@@ -41,13 +41,15 @@ Usage:
 
   Note: celery worker can not run as root, so need to use normal user, here, for example, I used mysql.
 
-9) Setting shedule
+9) Setting shedule.
 
    login the django administrate web. 
    http://127.0.0.1:80/admin/
 
-   (1) At the "DJCELERY" column, select "Periodic tasks"
+   (1) At the "DJCELERY" column, select "Periodic tasks".
 
-   (2) Add PERIODIC TASK
+   (2) Add PERIODIC TASK.
    
-10) Check the result.
+   (3) Save.
+
+10) Check the tasks and result.
