@@ -17,7 +17,7 @@ Usage:
 3) Migrate the project.
   > python manage.py migrate
 
-  Note: For test, we create a test database in mysql and create a table test. The test table shedule under mysite folder.
+  Note: For test, we create a test database in mysql and create a table test. The test table schema under mysite folder.
 
 4) Create an django administrator.
   > python manage.py createsuperuser
