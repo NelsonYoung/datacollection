@@ -1,6 +1,8 @@
 ## Data collection and save to mysql.
 
 Usage:
+0) Create tables
+   
 
 1) Download the source code.
   > git clone https://github.com/slient2010/datacollection.git

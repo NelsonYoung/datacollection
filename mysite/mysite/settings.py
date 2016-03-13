@@ -108,6 +108,8 @@ DATABASES = {
         'PASSWORD':'',
         'HOST': 'localhost',
         'PORT': 3306,
+        'CHARSET': 'utf8',
+        'COLLATE': 'utf8_general_ci'
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
