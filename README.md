@@ -45,7 +45,7 @@ Usage:
 
   Note: celery worker can not run as root, so need to use normal user, here, for example, I used mysql.
 
-9) Setting shedule.
+9) Setting schedule.
 
    Login into the django administrate page. 
    http://127.0.0.1:80/admin/
