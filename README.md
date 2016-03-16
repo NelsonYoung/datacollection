@@ -13,6 +13,8 @@ Usage:
    > yum install mysql-server
   
    > yum install redis
+   
+   > yum install MySQL-python.x86_64
   
    > pip install -r requirements.txt
 
