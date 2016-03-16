@@ -19,6 +19,9 @@ Usage:
    > pip install -r requirements.txt
 
 3) Migrate the project.
+
+  > python manage.py makemigrations
+  
   > python manage.py migrate
 
   Note: For test, we create a test database in mysql and create a table test. The test table schema under mysite folder.
